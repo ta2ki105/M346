@@ -21,7 +21,8 @@ never add M-346 material to jflt-app.
 - `src/App.jsx` — header, language toggle, section nav (auto-shown with ≥2 sections)
 - `src/sections/index.js` — `SECTIONS` registry
 - `src/sections/<id>/` — one folder per topic (panel + data + drawings)
-- `src/i18n/messages.js` — UI strings; `app.*` for the shell, `engine.*` etc. per section
+- `src/components/ui.jsx` — shared StructureTree / PartDetail / GroupDetail / QuizBar / Glossary / controls (strings under `ui.*`). New sections should reuse these; the engine section still has its own inline copies (older code)
+- `src/i18n/messages.js` — UI strings; `app.*` for the shell, `ui.*` shared, `engine.*` / `airframe.*` per section
 
 ## Conventions
 
@@ -33,5 +34,9 @@ never add M-346 material to jflt-app.
 - Engine geometry (`sections/engine/EngineDiagram.jsx`) uses `[x, r]`
   radius-from-centreline coordinates; the upper half is mirrored for the
   lower half; shafts, gearbox and FADEC are drawn un-mirrored.
+- Airframe drawings (`sections/airframe/AirframeDiagram.jsx`) are in metres
+  (plan: x aft from nose, y to the right wing; side: x aft, z up from the
+  ground) so the outline matches 11.49 m × 9.72 m × 4.76 m. The M-346 has a
+  SINGLE fin (not twin tails).
 - Charts: never put two measures on one y-axis (use small multiples).
 - Run `npm run build` before committing.

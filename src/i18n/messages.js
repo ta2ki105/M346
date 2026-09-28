@@ -6,7 +6,10 @@ export const MESSAGES = {
       "title": "M-346 Explorer",
       "tagline": "Leonardo M-346 · systems and structure, taken apart",
       "footer": "Simplified learning material based on public sources. Not a technical or maintenance publication.",
-      "sections": { "engine": "Engine" }
+      "sections": {
+        "airframe": "Airframe",
+        "engine": "Engine"
+      }
     },
     "common": {
       "next": "Next →"
@@ -78,6 +81,65 @@ export const MESSAGES = {
       "glossary_hint": "Every technical term used above, grouped by part. Click a part name to show it in the drawing.",
       "glossary_filter": "Filter terms…",
       "glossary_empty": "No terms match."
+    },
+    "ui": {
+      "mode_explore": "Explore",
+      "mode_quiz": "Quiz",
+      "explode": "Explode",
+      "assemble": "Assemble",
+      "explode_label": "Explode amount",
+      "hover_hint": "Hover or tap a part · tap again to deselect",
+      "detail_empty": "Click a part in the drawing or a line in the structure tree to see what it does.",
+      "detail_role": "What it is",
+      "detail_how": "How it works",
+      "detail_facts": "Key facts",
+      "detail_vocab": "Technical English",
+      "detail_contains": "Contains",
+      "tree_title": "Structure tree",
+      "quiz_prompt": "Click the part:",
+      "quiz_correct": "✓ Correct!",
+      "quiz_wrong": "✗ That was: {picked}",
+      "quiz_score": "{correct} correct",
+      "quiz_done": "Finished — {correct} / {total} correct.",
+      "quiz_restart": "Try again",
+      "quiz_hint": "The correct part lights up after you answer.",
+      "glossary_title": "Vocabulary (EN → JA)",
+      "glossary_hint": "Every technical term used above, grouped by part. Click a part name to show it in the drawing.",
+      "glossary_filter": "Filter terms…",
+      "glossary_empty": "No terms match."
+    },
+    "airframe": {
+      "kicker": "M-346 · Airframe explorer",
+      "title": "Airframe structure",
+      "subtitle": "Wing, fuselage, tail and landing gear, part by part",
+      "intro": "Switch between the plan (top) and side views, explode the airframe, turn on the internal structure to see spars, ribs and frames, and follow how loads travel from the wing into the fuselage. Every part comes with technical English terms.",
+      "source_note": "Dimensions and features are from public sources. Drawings are simplified learning schematics – internal structure, tank layout and material colouring are illustrative, not technical data.",
+      "viewer_title": "Plan & side view",
+      "view_top": "Top view",
+      "view_side": "Side view",
+      "color_module": "Parts",
+      "color_movable": "Moving surfaces",
+      "color_material": "Materials",
+      "structure": "Internal structure",
+      "numbers": "Numbers",
+      "legend_module": "Each part has its own colour; numbers match the structure tree.",
+      "legend_movable": "Moves in flight (flight controls, airbrake)",
+      "legend_fixed": "Fixed structure",
+      "material_note": "Published: primary structure mainly aluminium alloy, titanium/steel in specific areas; most fuselage skins, panels, intakes and ducts in composites. The colour per part is a simplified, illustrative mapping of that statement.",
+      "not_in_view": "This part is not visible in this view.",
+      "dim_length": "Length",
+      "dim_span": "Span",
+      "dim_height": "Height",
+      "right_wing": "Right wing",
+      "left_wing": "Left wing",
+      "badge_movable": "Moving surface",
+      "tree_hint": "The airframe broken down into fuselage, wing, tail and landing gear. \"Moving surfaces\" is a cross-cutting group: everything the fly-by-wire system moves.",
+      "basics_title": "How an airframe is built",
+      "basics_intro": "Aircraft are built as a thin skin supported by a light skeleton (semi-monocoque). Turn on \"Internal structure\" to see these elements in the drawing.",
+      "basics_show": "Show the internal structure in the drawing",
+      "load_title": "Follow the load (load path)",
+      "load_intro": "Where does the lift go? Step through how forces travel from the wing skin into the rest of the airframe. The drawing above highlights each step.",
+      "load_hint": "Highlighted in the drawing above"
     }
   },
   "ja": {
@@ -85,7 +147,10 @@ export const MESSAGES = {
       "title": "M-346 Explorer",
       "tagline": "Leonardo M-346 のシステムと構造を分解して学ぶ",
       "footer": "公開情報に基づく簡略化した学習用資料です。技術・整備資料ではありません。",
-      "sections": { "engine": "エンジン" }
+      "sections": {
+        "airframe": "機体構造",
+        "engine": "エンジン"
+      }
     },
     "common": {
       "next": "次へ →"
@@ -157,6 +222,65 @@ export const MESSAGES = {
       "glossary_hint": "上で使った技術用語を部品ごとにまとめています。部品名をクリックすると図に表示します。",
       "glossary_filter": "用語を検索…",
       "glossary_empty": "該当する用語はありません。"
+    },
+    "ui": {
+      "mode_explore": "探索",
+      "mode_quiz": "クイズ",
+      "explode": "分解",
+      "assemble": "組み立て",
+      "explode_label": "分解の度合い",
+      "hover_hint": "部品にカーソルを合わせる／タップ（もう一度タップで解除）",
+      "detail_empty": "図の部品か、下の構造ツリーの項目をクリックすると説明が表示されます。",
+      "detail_role": "どんな部品か",
+      "detail_how": "仕組み",
+      "detail_facts": "ポイント",
+      "detail_vocab": "技術英語",
+      "detail_contains": "構成要素",
+      "tree_title": "構造ツリー",
+      "quiz_prompt": "この部品をクリック：",
+      "quiz_correct": "✓ 正解！",
+      "quiz_wrong": "✗ それは「{picked}」です",
+      "quiz_score": "{correct}問正解",
+      "quiz_done": "終了 — {total}問中 {correct}問正解。",
+      "quiz_restart": "もう一度",
+      "quiz_hint": "回答すると正解の部品が光ります。",
+      "glossary_title": "用語集（英 → 日）",
+      "glossary_hint": "上で使った技術用語を部品ごとにまとめています。部品名をクリックすると図に表示します。",
+      "glossary_filter": "用語を検索…",
+      "glossary_empty": "該当する用語はありません。"
+    },
+    "airframe": {
+      "kicker": "M-346 · 機体構造図鑑",
+      "title": "機体構造",
+      "subtitle": "主翼・胴体・尾翼・降着装置を部品ごとに",
+      "intro": "上面図と側面図を切り替え、機体を分解し、「内部構造」をオンにして桁・リブ・フレームを確認し、主翼から胴体へ荷重がどう伝わるかをたどりましょう。各部品に技術英語の用語つき。",
+      "source_note": "寸法と特徴は公開情報に基づきます。図は学習用に簡略化した概念図で、内部構造・燃料タンク配置・材料の色分けはイメージです（技術資料ではありません）。",
+      "viewer_title": "上面図／側面図",
+      "view_top": "上面図",
+      "view_side": "側面図",
+      "color_module": "部品",
+      "color_movable": "可動翼面",
+      "color_material": "材料",
+      "structure": "内部構造",
+      "numbers": "番号",
+      "legend_module": "部品ごとに色分け。番号は構造ツリーと対応しています。",
+      "legend_movable": "飛行中に動く（操縦翼面・エアブレーキ）",
+      "legend_fixed": "固定構造",
+      "material_note": "公表情報：主構造は主にアルミ合金、特定部位にチタン・鋼。胴体外板の多く、パネル、インテーク、ダクトは複合材。部品ごとの色はこれを簡略化したイメージです。",
+      "not_in_view": "この部品はこの図では見えません。",
+      "dim_length": "全長",
+      "dim_span": "翼幅",
+      "dim_height": "全高",
+      "right_wing": "右翼",
+      "left_wing": "左翼",
+      "badge_movable": "可動翼面",
+      "tree_hint": "機体を胴体・主翼・尾翼・降着装置に分解した階層図です。「可動翼面」は横断グループで、フライ・バイ・ワイヤが動かす部品をまとめています。",
+      "basics_title": "機体はどう作られているか",
+      "basics_intro": "航空機は、薄い外板を軽い骨組みで支える構造（セミモノコック）で作られます。「内部構造」をオンにすると図の中で確認できます。",
+      "basics_show": "図で内部構造を表示する",
+      "load_title": "荷重の流れをたどる（ロードパス）",
+      "load_intro": "揚力はどこへ行くのか？主翼の外板から機体全体へ力がどう伝わるかをステップごとに確認できます。上の図で該当部品が光ります。",
+      "load_hint": "上の図でハイライト中"
     }
   }
 };
