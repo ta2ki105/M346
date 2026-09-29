@@ -41,3 +41,15 @@ never add M-346 material to jflt-app.
   lower half; shafts, gearbox and FADEC are drawn un-mirrored.
 - Charts: never put two measures on one y-axis (use small multiples).
 - Run `npm run build` before committing.
+
+## Current handoff
+
+- The interactive airframe and systems study section is implemented in commit
+  `21103ed` on branch `codex/m346-public-study`.
+- The deployed public site is https://m346-explorer.ifts-words-app.workers.dev
+  and is served by the `m346-explorer` Cloudflare Worker.
+- The airframe is an explicitly illustrative learning model. Use public
+  sources for published figures and do not copy FOR OFFICIAL USE ONLY or other
+  restricted NotebookLM source material into the public app.
+- If a fresh checkout is being used, verify the branch and run `npm run
+  deploy` only after reviewing the current diff and source provenance.

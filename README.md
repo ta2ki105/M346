@@ -66,6 +66,9 @@ Only public-source figures are stated as fact. Engine: 3-stage fan, HP
 compressor with 4 axial + 1 centrifugal stages, annular combustor,
 single-stage HP and LP turbines, bypass ratio ≈ 0.47, fan pressure ratio
 ≈ 2.5, overall pressure ratio ≈ 19.4, max thrust ≈ 27.8 kN (6,250 lbf).
-Airframe: dimensions (11.49 × 9.72 × 4.76 m), 9 hardpoints, ≈ 3,000 kg external load. Equipment positions and pipe / wire routes in the 3D model are illustrative and flagged "position approximate" in the UI.
+Airframe: public references give 11.49 m length, 9.72 m span, and height
+values of 4.76 m or 4.98 m depending on the stated configuration and source.
+Equipment positions and pipe / wire routes in the 3D model are illustrative
+and flagged "position approximate" in the UI.
 Drawings are simplified learning schematics, not maintenance documents;
 anything not from a published figure is labelled illustrative.
