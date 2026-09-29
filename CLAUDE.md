@@ -13,6 +13,9 @@ never add M-346 material to jflt-app.
 ## Tech stack
 
 - React 18 + Vite 5, Tailwind CSS 3 (utility classes only), no backend
+- three.js (pinned 0.160.0) for the 3D airframe section, lazy-loaded via `React.lazy`
+- Hosting: Cloudflare Workers static assets (`wrangler.jsonc`, worker `m346-explorer`);
+  deploy with `npm run deploy`
 - `localStorage` only for per-viewer conveniences (`m346_engine_lang`,
   `m346_section`); every access is wrapped in try/catch
 
@@ -21,6 +24,9 @@ never add M-346 material to jflt-app.
 - `src/App.jsx` — header, language toggle, section nav (auto-shown with ≥2 sections)
 - `src/sections/index.js` — `SECTIONS` registry
 - `src/sections/<id>/` — one folder per topic (panel + data + drawings)
+- `src/sections/airframe/atlas-scene.js` — framework-free three.js scene; axes +x forward,
+  +y up, +z starboard, metres. It only knows part / system ids; all text is in
+  `airframe-data.js`. Parts placed by estimate are registered with `approx: true`.
 - `src/i18n/messages.js` — UI strings; `app.*` for the shell, `engine.*` etc. per section
 
 ## Conventions

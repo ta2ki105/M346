@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { useI18n } from './i18n/useI18n.js';
 import { SECTIONS } from './sections/index.js';
 
@@ -75,7 +75,9 @@ export default function App() {
         </div>
       </header>
       <main className="max-w-4xl mx-auto px-4 py-6">
-        <Current />
+        <Suspense fallback={<p className="text-sm text-slate-500">{t('app.loading')}</p>}>
+          <Current />
+        </Suspense>
       </main>
       <footer className="max-w-4xl mx-auto px-4 pb-8 text-center text-[11px] text-slate-400">{t('app.footer')}</footer>
     </div>
