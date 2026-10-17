@@ -3,3 +3,7 @@ dist/
 .DS_Store
 *.local
 .wrangler/
+
+# Private edition: TO-derived data and its builds never leave the local machine
+/private/
+/dist-private/

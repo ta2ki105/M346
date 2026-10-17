@@ -67,7 +67,7 @@ export default function App() {
                   }`}
                 >
                   <span className="mr-1">{s.icon}</span>
-                  {t(`app.sections.${s.id}`)}
+                  {s.label ? s.label[lang] ?? s.label.en : t(`app.sections.${s.id}`)}
                 </button>
               ))}
             </nav>

@@ -30,6 +30,12 @@ npm run deploy   # vite build + wrangler deploy
 
 Requires `npx wrangler login` once on the machine.
 
+## Private edition
+
+Notes from non-public documents are kept out of this public site. They are
+built separately into an offline, passphrase-encrypted single HTML file:
+`npm run build:private` (see [docs/PRIVATE_EDITION.md](docs/PRIVATE_EDITION.md)).
+
 ## Layout
 
 ```
