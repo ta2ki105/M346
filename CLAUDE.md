@@ -29,6 +29,18 @@ never add M-346 material to jflt-app.
   `airframe-data.js`. Parts placed by estimate are registered with `approx: true`.
 - `src/i18n/messages.js` — UI strings; `app.*` for the shell, `engine.*` etc. per section
 
+## Private edition
+
+- Non-public notes (e.g. Technical Order cross-checks) go ONLY into the private
+  edition: data in `private/` (gitignored), built with `npm run build:private`
+  into one offline, passphrase-encrypted HTML file in `dist-private/`
+  (gitignored). See `docs/PRIVATE_EDITION.md`.
+- Never commit `private/` or `dist-private/`, never put their content in
+  `src/`, and never deploy them. `npm run build` runs `scripts/check-public.mjs`
+  and must stay green.
+- `src/sections/private/PrivatePanel.jsx` holds UI code only (its strings stay
+  in that file so the public bundle carries none of them).
+
 ## Conventions
 
 - Every UI string in **both** `en` and `ja`. Section content data uses
